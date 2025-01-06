@@ -77,4 +77,25 @@ div#myProjects{
 footer{
     background-color: var(--cor2);
     min-height: 140px;
+    display: flex;
+}
+
+footer > img{
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+}
+
+footer > a > img{
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+    margin-right: 30px;
+}
+
+footer > div{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 55px;
+    margin-right: 1200px;
 }
