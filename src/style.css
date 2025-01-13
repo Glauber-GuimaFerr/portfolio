@@ -14,7 +14,7 @@
 h1{
     text-align: center;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
 
 p{
@@ -29,7 +29,7 @@ p{
 
 :root{
     --cor0: #ff4858;
-    --cor1: #e06b75;
+    --cor1: #ff7a85;
     --cor2: #1b7f79;
     --cor3: #00ccc0;
     --cor4: #72f2eb;
@@ -62,7 +62,7 @@ header > nav > a{
 }
 
 header > nav > a:hover{
-    color: rgb(199, 73, 0);
+    color: var(--cor1);
 }
 
 /*Apresentações*/
@@ -81,7 +81,7 @@ div#me > div{
 }
 
 div#me > div > h1{
-    color: rgb(18, 20, 175);
+    color: rgb(9, 108, 121);
 }
 
 div#me > img{
@@ -92,7 +92,7 @@ div#me > img{
 
 /*Sobre*/
 div#above{
-    background-color: var(--cor1); 
+    background-color: var(--cor0); 
     min-height: 100px;
     padding: 50px;
     font-size: 2em;
@@ -104,6 +104,20 @@ div#mySkills{
     min-height: 100px;
     padding: 50px;
     font-size: 2em;
+}
+
+#langBox{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 250px 0px 250px;
+    padding: 20px;
+    background-color: rgb(17, 96, 128);
+    border-radius: 10px;
+}
+
+#langBox > img{
+    width: 120px;
+    height: 120px;
 }
 
 /*Projetos*/
