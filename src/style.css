@@ -41,7 +41,10 @@ p{
 header{
     background-color: var(--cor2);
     min-height: 140px;
+    width: 100%;
     display: flex;
+    position: fixed;
+    z-index: 1;
 }
 
 header > img{
@@ -50,7 +53,7 @@ header > img{
 }
 
 header > nav{
-    margin-left: 900px;
+    margin-left: 750px;
     margin-top: 50px;
 }
 
@@ -112,7 +115,7 @@ div#mySkills{
     margin: 0px 250px 0px 250px;
     padding: 20px;
     background-color: rgb(17, 96, 128);
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 #langBox > img{
