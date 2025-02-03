@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
 
 /*Definição default*/
+
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -71,31 +76,31 @@ header > nav > a:hover{
 /*Apresentações*/
 div#me{
     position: relative;
-    background-color: var(--cor3);
+    background-image: linear-gradient(90deg, var(--cor3), var(--cor4));
     min-height: 800px;
 }
 
 div#me > div{
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 4%;
     font-size: 2.5em;
     line-height: 2.5em;
 }
 
 div#me > div > h1{
-    color: rgb(9, 108, 121);
+    color: rgb(14, 76, 100);
 }
 
 div#me > img{
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 60%;
 }
 
 /*Sobre*/
 div#above{
-    background-color: var(--cor0); 
+    background-image: linear-gradient(45deg, var(--cor0), var(--cor1)); 
     min-height: 100px;
     padding: 50px;
     font-size: 2em;
@@ -103,7 +108,7 @@ div#above{
 
 /*Habilidades*/
 div#mySkills{
-    background-color: var(--cor4);
+    background-image: linear-gradient(180deg, var(--cor3), var(--cor4));
     min-height: 100px;
     padding: 50px;
     font-size: 2em;
@@ -125,10 +130,47 @@ div#mySkills{
 
 /*Projetos*/
 div#myProjects{
-    background-color: var(--cor0);
+    background-image: linear-gradient(225deg, var(--cor0), var(--cor1));
     min-height: 100px;
     padding: 50px;
     font-size: 2em;
+}
+
+#grid{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1500px;
+}
+
+.box{
+    width: 400px;
+    height: 300px;
+    background-color: green;
+    margin: 30px;
+    box-sizing: border-box; 
+    border-radius: 15px;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #ffffff;
+    opacity: 0;
+    transition: .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay:hover{
+    opacity: 1;
 }
 
 /*Rodapé*/
